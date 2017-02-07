@@ -1,57 +1,60 @@
 /* = Show All Pages
 -------------------------------------------------------------- */
 
-#all_pages .container {
-	position: absolute; top: 50%;
+#fb5 #fb5-all-pages .fb5-container-pages {
+	position: absolute; 
 	width: 100%;
 	height: 225px;
 	background: black;
-	padding: 25px 0;
-	margin-top: -120px;
+	padding: 2% 0;
 			box-shadow: 0 0 40px #64c8d3;
 			box-shadow: 0 0 40px rgba(100, 200, 211, .8);
 	   -moz-box-shadow: 0 0 40px rgba(100, 200, 211, .8);
 	-webkit-box-shadow: 0 0 40px rgba(100, 200, 211, .8);
 }
 
-	#menu_holder {
-		position: fixed;
+	#fb5 #fb5-menu-holder {
+		position: absolute;
+		height:inherit;
 		overflow: hidden;
-		height: 225px;
 		width: 100%;
 	}
 
-		#slider {
+		#fb5 #fb5-slider {
 			position: absolute;
+			left:0;
 			list-style: none;
+			height:inherit;
 			margin: 0;
 			padding: 0;
 		}
 
-			#slider li {
+			#fb5 #fb5-slider li {
 				float: left;
 				position: relative;
-				height: 225px;
+				height:inherit;
 				padding: 0 10px;
 				text-align: center;
 				cursor: pointer;
+				margin:0;
+				list-style:none;
 			}
 
-			#slider li:first-child {
+			#fb5 #fb5-slider li:first-child {
 				padding-left: 100px;
 			}
 
-			#slider li:last-child { 
+			#fb5 #fb5-slider li:last-child { 
 				padding-right: 100px;
 			}
 			
-			#slider li:hover {
+			#fb5 #fb5-slider li:hover {
 				
 			}
 			
-			#slider li img {
+			#fb5 #fb5-slider li img {
 				float: left;
-				height: 225px;
+				height:inherit;
 			}
 
 
@@ -59,10 +62,11 @@
 /* = Contact Form
 -------------------------------------------------------------- */
 
-#contact form {
+#fb5 #fb5-contact form {
 	position: absolute; left: 50%; top: 50%;
 	background: #161616;
-	width: 300px; height: 210px;
+	width: 300px; 
+	height:auto;
 	margin: -115px 0 0 -165px;
 	padding: 10px 15px 15px 15px;
 		    box-shadow: 0 0 60px #64c8d3;
@@ -71,57 +75,80 @@
 	-webkit-box-shadow: 0 0 60px rgba(100, 200, 211, .7);
 }
 
-#contact form,
-#contact input,
-#contact textarea {
+#fb5 #fb5-contact form,
+#fb5 #fb5-contact input,
+#fb5 #fb5-contact textarea {
 	        border-radius: 8px;
 	   -moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
+	
 }
 
-	#contact form h3 {
+	#fb5 #fb5-contact form h3 {
+		font-family:Arial,sans-serif;
 		margin: 0 0 6px 0;
 		font-size: 0.875em;
 		font-weight: bold;
-		text-transform: uppercase;
+		/*text-transform: uppercase;/*/
 		color: white;
 		-webkit-font-smoothing: antialiased;
 	}
 
-	#contact form p {
+	#fb5 #fb5-contact form p {
 		padding: 0 0 3px 0;
 		font-size: .75em;
+		margin:0;
 	}
 	
-	#contact form input,
-	#contact form textarea {
+	#fb5 #fb5-contact form input,
+	#fb5 #fb5-contact form textarea {
+		font-family:Arial, Helvetica, sans-serif;
+		box-shadow:none;
 		width: 270px;
+		height:30px;
 		background: black;
 		border: 0;
 		padding: 8px 15px;
 		font-size: 11px;
 		color: #737373;
+		margin: 2px 0 0 0;
+		
+		box-sizing: content-box;
+		-moz-box-sizing: content-box;
+	}
+	
+	#fb5 #fb5-contact form input {
+		height: 15px;
+	    max-height:15px;
+		min-height:15px;
 	}
 
-	#contact form textarea {
-		height: 60px;
-		margin: 2px 0 0 0;
+	#fb5 #fb5-contact form textarea {
+		height: 60px;		
 		resize: none;
-		overflow: auto; }
+		max-height:60px;
+		min-height:60px;
+		-moz-box-sizing:inherit;
+		box-sizing:inherit;
+		
+		
+	}
 
-	#contact button,
-	#contact .close {
+	#fb5 #fb5-contact button,
+	#fb5 #fb5-contact .fb5-close {
 			    border-radius: 4px;
 		   -moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
 	}
 
-	#contact button {
+	#fb5 #fb5-contact button {
+		height:18px;
 		background: #64c8d3;
-		margin: 0 0 0 100px;
+		margin: 10px 0 0 100px;
 		padding: 4px 8px;
 		text-align: center;
-		text-transform: uppercase;
+		font-family:Arial, Helvetica, sans-serif;
+		/*text-transform: uppercase;/*/
 		font-size: 11px;
 		color: white;
 			    border-radius: 4px;
@@ -129,7 +156,7 @@
 		-webkit-border-radius: 4px;
 	}
 
-	#contact .close {
+	#fb5 #fb5-contact .fb5-close {
 		position: absolute; right: 15px; top: 10px; z-index: 5;
 		background: #64c8d3;
 		padding: 2px 5px;
@@ -138,7 +165,25 @@
 		color: black;
 	}
 
-	#contact .error { color: white; }
+	#fb5 #fb5-contact .fb5-error { 
+	
+	color: white; 
+	
+	}
 
-	#contact .thanks { display: none; }
+	#fb5 #fb5-contact .fb5-thanks {
+		 color:#444444;
+		 display: none;
+	}
+	
+	#fb5 #fb5-contact .fb5-thanks h1 {
+		 font-size:18px;
+		 color:#444 444;
+	}
+	
+	#fb5 #fb5-contact .fb5-thanks p {
+		 font-size:11px;
+		 color:#444444;
+	}
 
+	

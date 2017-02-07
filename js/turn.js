@@ -1035,7 +1035,7 @@ turnMethods = {
 			}
 
 		} else {
-			turnMethods._removeMv.call(turn, opts.pageMv);
+			//turnMethods._removeMv.call(turn, opts.pageMv);
 			turn.turn('update');
 		}
 		
