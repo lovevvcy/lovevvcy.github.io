@@ -17,14 +17,33 @@ sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
 	font-size: 100%;
 	font-weight: inherit;
 	font-style: inherit;
-	vertical-align: baseline; }
+	vertical-align: baseline; 
+	
+	border-radius: 0;
+	line-height: 1.5;
+	text-align: left;
+	
+	box-shadow: none;
+	text-shadow: none;
+	overflow: visible;
+	background: none;
+	list-style: none;	
+	background-image: none;
+	/*display: none;*/
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
 
 article, aside, canvas, details, figcaption, figure, footer, header, 
 hgroup, menu, nav, section, summary { display: block; }
 
 a, ins, del { text-decoration: none; }
 
-ul, ol { list-style: none; }
+ul, ol { 
+	list-style: none; 
+	text-indent: 0px;
+	margin: 0 !important;
+}
 
 table {
 	border-spacing: 0;
