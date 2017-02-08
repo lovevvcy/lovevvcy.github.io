@@ -56,7 +56,7 @@ function startPoem() {
         }
         $("#lovepoem").html(str);
         flag++;
-    },2000);
+    },1500);
 }
 
 function startHeartAnimation(){
