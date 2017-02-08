@@ -206,9 +206,9 @@ var Book_v5 = {
             Book_v5.dragdrop_init();        
             Book_v5.resize_page()     
             Book_v5.center($('#v5_lightbox'));           
-            Book_v5.center_icon();
-            Book_v5.center_icon();
-            Book_v5.media_queries()
+            // Book_v5.center_icon();
+            // Book_v5.center_icon();
+            // Book_v5.media_queries()
 		});
 
 	  
@@ -416,9 +416,9 @@ var Book_v5 = {
         }
         
          //center icon
-        Book_v5.center_icon();
-        Book_v5.center_icon();
-        Book_v5.media_queries()
+        // Book_v5.center_icon();
+        // Book_v5.center_icon();
+        // Book_v5.media_queries()
    
          
     },
