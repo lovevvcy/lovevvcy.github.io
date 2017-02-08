@@ -427,12 +427,15 @@
 	}
 	
 	#fb5 .fb5-page-book h4 {
-	   	-webkit-text-size-adjust:none;
-		
+	   	-webkit-text-size-adjust:none;	
 	}
 	
 	#fb5 .fb5-page-book h5 {
 	   	-webkit-text-size-adjust:none;
+		text-align: center;
+		
+		margin-bottom:10px;
+		line-height:1.5;
 		
 	}
 	
