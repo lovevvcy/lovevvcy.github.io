@@ -2,6 +2,7 @@
 @import url('static.css');
 @import url('elements.css');
 @import url('preloader.css');
+@import url('default.css');
 
 
 
@@ -248,15 +249,15 @@
 		width: 100%;
 		list-style: none;
 		padding: 20px 0;
-		border-top: 1px solid #e2e2e2;
-		border-bottom: 1px solid #e2e2e2;
+		/*border-top: 1px solid #e2e2e2;*/
+		/*border-bottom: 1px solid #e2e2e2;*/
 	}
 	
 	#fb5 #fb5-cover ul:after { clear: both; content: ''; display: block; }
 	
 	#fb5 #fb5-cover li {
 		float: left;
-		width: 28.3%;
+		/*width: 28.3%;*/
 		margin: 0 2.5%;
 		list-style:none;
 	}
@@ -725,6 +726,7 @@
 		   color: #64C8D3;
 		   font-family:Arial;
 		   font-size:24px;
+		   text-align: center;
 	    }  
 		#fb5-about h3 {
 		   color: #64C8D3;

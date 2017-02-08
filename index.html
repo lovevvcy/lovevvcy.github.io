@@ -19,6 +19,8 @@
     <script src="js/jquery.address-1.6.min.js"></script>
     <script src="js/wait.js"></script>
 	<script src="js/onload.js"></script>
+    <script src="js/garden.js"></script>
+    <script src="js/function.js"></script>
 
 
     <!-- style css  -->
@@ -83,31 +85,27 @@
                           <li data-address="page1" data-page="1"></li>
                           <li data-address="page2-page3" data-page="2"></li>
                           <li data-address="page2-page3" data-page="3"></li>
-                          <li data-address="page4-5" data-page="4"></li>
-                          <li data-address="page4-5" data-page="5"></li>
+                          <li data-address="page4-page5" data-page="4"></li>
+                          <li data-address="page4-page5" data-page="5"></li>
                           <li data-address="page6-page7" data-page="6"></li>
                           <li data-address="page6-page7" data-page="7"></li>
                           <li data-address="page8-page9" data-page="8"></li>
                           <li data-address="page8-page9" data-page="9"></li>
-                          <li data-address="10-11" data-page="10"></li>
-                          <li data-address="10-11" data-page="11"></li>
+                          <li data-address="page10-page11" data-page="10"></li>
+                          <li data-address="page10-page11" data-page="11"></li>
                           <li data-address="end" data-page="12"></li>
                      </ul>
                  </section>
                 <!-- END deep linking -->  
             
                 
+                   
                 <!-- BEGIN ABOUT -->
                 <section id="fb5-about">
-                <h3>How to read a book?</h3>
-        <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus ac convallis sapien ornare. Nullam a est id diam elementum rhoncus.Ad dicam diceret pri. Cu animal eligendi eam, nam ea alia oratio constituam, ad elit dolore possim est. Usu in nostro delectus, ne definitionem delicatissimi has. Cu sea iriure vivendum dignissim, choro nonumy philosophia ex mea. In usu reque liber fabellas, omnes omittam te per, ei novum percipitur cum. An eum erat facer, persius delectus ei vis.</p>
-        <p>&nbsp;</p>
-        <h3>Short description</h3>
-        <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus ac convallis sapien ornare. Nullam a est id diam elementum rhoncus.Te amet disputando vel. Cu vim persius consequat consetetur, eam id melius fuisset principes. Clita habemus et vix, ius doming philosophia et. Eos mutat luptatum ad. Ad iudico repudiandae nec, mel an tempor accusata eloquentiam, choro forensibus et eam.</p>
-        <p>&nbsp;</p>
-        <h3>Start reading!</h3>
-        <p>Nulla congue pulvinar pharetra. Cras sed malesuada arcu. Duis eleifend nunc laoreet odio dapibus ac convallis sapien ornare. Nullam a est id diam elementum <a href="javascript:setPage(2)">rhoncus</a>.Te amet disputando vel. Cu vim persius consequat consetetur, eam id melius fuisset principes. Clita habemus et vix, ius doming philosophia et. Eos mutat luptatum ad. Ad iudico repudiandae nec, mel an tempor accusata eloquentiam, choro forensibus et eam.</p>
-        <p>&nbsp;</p>
+                    
+                    <div id="lovepoem">
+                    </div>
+                    
                 </section>
                 <!-- END ABOUT -->
                 
@@ -117,30 +115,27 @@
                 
                           
                 <!-- BEGIN PAGE 1-->          
-                <div data-background-image="" class="">
+                <div data-background-image="page/1.jpeg" class="">
                        
                      <!-- begin container page book --> 
                      <div class="fb5-cont-page-book">
                        
                                     <!-- description for page  --> 
-                                    <div class="fb5-page-book">
-                                       <div id="fb5-cover">
-                                          <ul>
-                                            <li><a href="javascript:setPage(2)"><img data-src="img/examples/cover-photo1.jpg"></a></li>
-                                            <li><a href="javascript:youtube('zWzRrqEvfPU','560','315')"><img data-src="img/examples/cover-photo2.jpg"></a></li>
-                                            <li><a href="javascript:youtube('48I0IHmsuOE','560','315')"><img data-src="img/examples/cover-photo3.jpg"></a></li>
-                                         </ul>
-                                         <img data-src="img/logo-on-book.png" id="fb5-logo-cover">		
-                                      </div>
-                                   </div> 
+                        <div class="fb5-page-book">
+                            <div id="fb5-cover">
+                                <ul>
+                                <li><img data-src="page/cover.png"></a></li>
+                                </ul>	
+                            </div>
+                        </div> 
                                    <!-- end description for page  -->           
                                     
-                                  <!-- number page and title -->                
-                                  <div class="fb5-meta">
-                                        <span class="fb5-description"></span>
-                                        <span class="fb5-num"></span>
-                                  </div>
-                                  <!-- end number page and title  -->  
+                        <!-- number page and title -->                
+                        <div class="fb5-meta">
+                            <span class="fb5-description"></span>
+                            <span class="fb5-num"></span>
+                        </div>
+                        <!-- end number page and title  -->  
                       </div> 
                       <!-- end container page book --> 
                         
@@ -477,129 +472,42 @@
     
         <!-- BEGIN FOOTER -->
         <div id="fb5-footer">
+            
         </div>
         <!-- END FOOTER -->
-    
-    
-        <!-- BEGIN CONTACT FORM -->
-            <div id="fb5-contact" class="fb5-overlay">
-    
-         <form>
-            <a class="fb5-close">X</a>
-    
-            <fieldset>
-                <h3>CONTACT</h3>
-    
-                <p>
-                    <input type="text" class="req" id="fb5-form-name" value="name...">
-                </p>
-    
-                <p>
-                    <input type="text" class="req" id="fb5-form-email" value="email...">
-                </p>
-    
-                <p>
-                    <textarea class="req" id="fb5-form-message">message...</textarea>
-                </p>
-    
-                <p>
-                    <button type="submit">SEND MESSAGE</button>
-                </p>
-            </fieldset>
-            
-            <fieldset class="fb5-thanks">
-                <h1>Thanks for your email</h1>
-    <p>Lorem ipsum dolor sit amet, vel ad sint fugit, velit nostro pertinax ex qui, no ceteros civibus explicari est. Eleifend electram ea mea, omittam reprehendunt nam at. Putant argumentum cum ex. At soluta principes dissentias nam, elit voluptatum vel ex.</p>		</fieldset>
-         </form>
-    
-       </div>
-          <!-- END CONTACT FORM -->
-    
-    
-        <!-- BEGIN ALL PAGES -->
-          <div id="fb5-all-pages" class="fb5-overlay">
-    
-          <section class="fb5-container-pages">
-    
-            <div id="fb5-menu-holder">
-    
-                <ul id="fb5-slider">
-                
-                         <li class="1">
-                           <img alt="" data-src="pages/thumbs/cover.jpg">
-                         </li>
-                
-                         <li class="2">
-                           <img alt="" data-src="pages/thumbs/2.jpg">
-                         </li>
-                        
-                         <li class="3">
-                           <img alt="" data-src="pages/thumbs/3.jpg">
-                         </li>
-                 
-                         <li class="4">
-                           <img alt="" data-src="pages/thumbs/4_5.jpg">
-                         </li>
-                         
-                         <li class="6">
-                           <img alt="" data-src="pages/thumbs/6_7.jpg">
-                         </li>
-                         
-                         <li class="7">
-                           <img alt="" data-src="pages/thumbs/6_7.jpg">
-                         </li>
-                         
-                         <li class="8">
-                           <img alt="" data-src="pages/thumbs/8.jpg">
-                         </li>
-                         
-                         <li class="9">
-                           <img alt="" data-src="pages/thumbs/9.jpg">
-                         </li>
-                         
-                         <li class="10">
-                           <img alt="" data-src="pages/thumbs/10_11.jpg">
-                         </li>
-                         
-                         <li class="12">
-                           <img alt="" data-src="pages/thumbs/12_13.jpg">
-                         </li>                                              
-    
-                  </ul>
-            
-              </div>
-    
-          </section>
-    
-         </div>
-         <!-- END ALL PAGES -->
-
-
    </div>
    <!-- END HTML BOOK -->
 
 
     <!-- CONFIGURATION FLIPBOOK -->
     <script>    
-    jQuery('#fb5').data('config',
-    {
-    "page_width":"570",
-    "page_height":"660",
-    "zoom_double_click":"1",
-    "zoom_step":"0.06",
-    "double_click_enabled":"true",
-    "tooltip_visible":"true",
-    "toolbar_visible":"true",
-    "gotopage_width":"30",
-    "deeplinking_enabled":"true",
-    "rtl":"false",
-    'full_area':'false',
-	'lazy_loading_thumbs':'false',
-	'lazy_loading_pages':'false',
-	'preloader_visible':'false',
-    })
+        jQuery('#fb5').data('config',
+        {
+        "page_width":"570",
+        "page_height":"660",
+        "zoom_double_click":"1",
+        "zoom_step":"0.06",
+        "double_click_enabled":"true",
+        "tooltip_visible":"true",
+        "toolbar_visible":"true",
+        "gotopage_width":"30",
+        "deeplinking_enabled":"true",
+        "rtl":"false",
+        'full_area':'false',
+        'lazy_loading_thumbs':'false',
+        'lazy_loading_pages':'false',
+        'preloader_visible':'false',
+        })
     </script>
+    <script>
+        // var offsetX = $("#loveHeart").width() / 2;
+        // var offsetY = $("#loveHeart").height() / 2 - 55;
 
+        // setTimeout(function () {
+        //     startHeartAnimation();
+        // }, 5000);
+        startPoem();
+    </script>
 
 </div>
 <!-- END FLIPBOOK STRUCTURE -->    
